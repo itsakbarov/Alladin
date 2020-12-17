@@ -1,4 +1,3 @@
-@import 'normalize';
 @import 'config';
 
 .container {
@@ -615,15 +614,18 @@ progress[value]::-webkit-progress-bar {
         }
 
         .footer-social__link {
+
             margin: 0 12px;
         }
     }
 
     .bottom {
         @include f-between;
-        .nav-wrapper{
+
+        .nav-wrapper {
             width: 44%;
         }
+
         .copyright {
             font-family: sans-serif;
             font-style: normal;
@@ -634,7 +636,8 @@ progress[value]::-webkit-progress-bar {
             color: rgba(235, 235, 245, 0.3);
             align-items: center;
         }
-        .nav-wrapper__link{
+
+        .nav-wrapper__link {
             font-family: Proxima Nova;
             font-style: normal;
             font-weight: 600;
@@ -643,7 +646,8 @@ progress[value]::-webkit-progress-bar {
             line-height: 20px;
             color: rgba(235, 235, 245, 0.3);
         }
-        .footer-social__link{
+
+        .footer-social__link {
             margin: 0 12px;
         }
     }
