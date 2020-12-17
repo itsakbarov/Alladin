@@ -1,0 +1,32 @@
+{
+  "name": "ga-basic-slider",
+  "title": "gaBasicSlider",
+  "version": "1.0.1",
+  "description": "A vanilla javascript slider plug-in that's made to be styleable",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/gregartist/ga-basic-slider.git"
+  },
+  "keywords": [
+    "javascript",
+    "vanilla",
+    "slider",
+    "plug-in",
+    "styleable",
+    "parallax",
+    "touch",
+    "looping"
+  ],
+  "author": "Greg Arutunyan",
+  "license": "MIT",
+  "bugs": {
+    "url": "http://github.com/gregartist/ga-basic-slider/issues"
+  },
+  "homepage": "http://github.com/gregartist/ga-basic-slider",
+  "devDependencies": {
+    "del": "^1.1.1",
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.1.0"
+  }
+}
