@@ -539,7 +539,7 @@ progress[value]::-webkit-progress-bar {
 .hot .hot-items .item .item__title {
   font-style: normal;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 18px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -562,6 +562,15 @@ progress[value]::-webkit-progress-bar {
       -ms-flex-align: center;
           align-items: center;
   color: #9169E4;
+}
+
+.hot .hot-items .item .item__tag--free {
+  color: #FFFFFF;
+  opacity: 0.34;
+}
+
+.hot .hot-items .item .item__tag--sail {
+  color: #D3465B;
 }
 
 .movie-card {

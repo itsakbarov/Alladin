@@ -436,6 +436,16 @@ progress[value]::-webkit-progress-bar {
                 display: flex;
                 align-items: center;
                 color: #9169E4;
+
+                &--free {
+                    color: #FFFFFF;
+                    opacity: 0.34;
+                }
+
+                &--sail {
+                    color: #D3465B;
+
+                }
             }
         }
     }
