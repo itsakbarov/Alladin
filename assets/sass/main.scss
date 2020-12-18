@@ -306,6 +306,7 @@ a {
     border: 3px solid #fff;
     border-radius: 50%;
     animation: loader 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    animation-iteration-count: 3;
     border-color: #fff transparent transparent transparent;
 }
 
@@ -453,7 +454,11 @@ progress[value]::-webkit-progress-bar {
 
         @include f-between;
     }
-
+    @media screen and (max-width: 480px){
+        .controls{
+            display: none;
+        }
+    }
     .controls__icon--rotated {
         opacity: 0.4;
 
@@ -832,5 +837,21 @@ progress[value]::-webkit-progress-bar {
 
     @media screen and (max-width: 480px) {
         // display: block;
+    }
+}
+.else{
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #FFFFFF;
+    opacity: 0.16;
+    display: none;
+    @media screen and(max-width: 480px){
+        display: block;
     }
 }

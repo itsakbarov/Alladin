@@ -387,6 +387,8 @@ a {
   border-radius: 50%;
   -webkit-animation: loader 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
           animation: loader 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
   border-color: #fff transparent transparent transparent;
 }
 
@@ -580,6 +582,12 @@ progress[value]::-webkit-progress-bar {
 
 .hot .hot-header .hot-header__title:hover::before {
   right: -80px;
+}
+
+@media screen and (max-width: 480px) {
+  .hot .controls {
+    display: none;
+  }
 }
 
 .hot .controls__icon--rotated {
@@ -1035,4 +1043,28 @@ progress[value]::-webkit-progress-bar {
   width: 28px;
   height: 28px;
   margin: 0 auto 4px auto;
+}
+
+.else {
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: right;
+  color: #FFFFFF;
+  opacity: 0.16;
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .else {
+    display: block;
+  }
 }

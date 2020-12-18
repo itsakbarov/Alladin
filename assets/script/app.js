@@ -51,6 +51,13 @@ $(document).ready(function () {
                     slidesToShow: 2,
                     slidesToScroll: 2
                 }
+            },
+            {
+                breakpoint: 320,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
             }
             // You can unslick at a given breakpoint now by adding:
             // settings: "unslick"
@@ -85,6 +92,13 @@ $(document).ready(function () {
                     slidesToShow: 2,
                     slidesToScroll: 2
                 }
+            },
+            {
+                breakpoint: 320,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
             }
             // You can unslick at a given breakpoint now by adding:
             // settings: "unslick"
@@ -118,6 +132,13 @@ $(document).ready(function () {
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 320,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
                 }
             }
             // You can unslick at a given breakpoint now by adding:
