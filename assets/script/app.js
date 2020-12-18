@@ -154,7 +154,7 @@ $(document).ready(function () {
         speed: 1000,
         dots: false,
         fade: true,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 2500,
         cssEase: 'linear'
     });
