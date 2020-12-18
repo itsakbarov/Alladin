@@ -26,6 +26,11 @@ a {
     right: 0;
     width: 100%;
 
+    @media screen and (max-width: 480px) {
+        display: none;
+
+    }
+
     .header__inner {
         @include f-between;
 
@@ -71,8 +76,13 @@ a {
     background-size: cover;
     background-position: top;
     padding-top: 260px;
+    @media screen and (max-width: 480px) {
+        height: max-content;
+    }
 
-    .movie-info {
+    .movie-info 
+    
+
         .sub-info {
             display: flex;
             align-items: center;
@@ -82,12 +92,18 @@ a {
         .movie-info__name {
             font-style: normal;
             font-weight: bold;
-            font-size: 48px;
             align-items: center;
+            font-size: 48px;
             line-height: 58px;
             display: flex;
             align-items: center;
             color: #FFFFFF;
+
+            @media screen and (max-width: 480px) {
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 32px;
+            }
         }
 
         .movie-info__date {
@@ -137,6 +153,10 @@ a {
     .movie-button {
         margin-bottom: 185px;
 
+        @media screen and (max-width: 480px) {
+            margin-bottom: 0;
+        }
+
         .movie-button__link {
             font-style: normal;
             font-weight: 600;
@@ -147,6 +167,10 @@ a {
             background: #5931AC;
             border-radius: 4px;
             position: relative;
+
+            @media screen and (max-width: 480px) {
+                display: none;
+            }
 
             &:before {
                 content: '';
@@ -197,6 +221,12 @@ a {
             border-radius: 4px;
             padding: 4px 12px;
             color: #2C2C2E;
+
+            @media screen and (max-width: 480px) {
+                font-weight: 600;
+                font-size: 10px;
+                line-height: 10px;
+            }
 
             &--new {
                 color: #FFFFFF;
@@ -330,6 +360,10 @@ a {
     .related__wrapper {
         display: flex;
 
+        @media screen and(max-width:480px) {
+            flex-wrap: wrap;
+        }
+
         .related-item {
             margin-right: 24px;
 
@@ -405,6 +439,10 @@ progress[value]::-webkit-progress-bar {
     .hot-items {
         @include f-between;
         align-items: flex-start;
+
+        @media screen and (max-width: 480px) {
+            flex-wrap: wrap;
+        }
 
         .item {
             width: 176px;

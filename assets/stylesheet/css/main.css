@@ -26,6 +26,12 @@ a {
   width: 100%;
 }
 
+@media screen and (max-width: 480px) {
+  .header {
+    display: none;
+  }
+}
+
 .header .header__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -100,6 +106,14 @@ a {
   padding-top: 260px;
 }
 
+@media screen and (max-width: 480px) {
+  .carousel__item {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+}
+
 .carousel__item .movie-info .sub-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -113,16 +127,24 @@ a {
 .carousel__item .movie-info .movie-info__name {
   font-style: normal;
   font-weight: bold;
-  font-size: 48px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 48px;
   line-height: 58px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   align-items: center;
   color: #FFFFFF;
+}
+
+@media screen and (max-width: 480px) {
+  .carousel__item .movie-info .movie-info__name {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+  }
 }
 
 .carousel__item .movie-info .movie-info__date {
@@ -185,6 +207,12 @@ a {
   margin-bottom: 185px;
 }
 
+@media screen and (max-width: 480px) {
+  .carousel__item .movie-button {
+    margin-bottom: 0;
+  }
+}
+
 .carousel__item .movie-button .movie-button__link {
   font-style: normal;
   font-weight: 600;
@@ -195,6 +223,12 @@ a {
   background: #5931AC;
   border-radius: 4px;
   position: relative;
+}
+
+@media screen and (max-width: 480px) {
+  .carousel__item .movie-button .movie-button__link {
+    display: none;
+  }
 }
 
 .carousel__item .movie-button .movie-button__link:before {
@@ -242,6 +276,14 @@ a {
   border-radius: 4px;
   padding: 4px 12px;
   color: #2C2C2E;
+}
+
+@media screen and (max-width: 480px) {
+  .carousel__item .tag__link {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 10px;
+  }
 }
 
 .carousel__item .tag__link--new {
@@ -420,6 +462,13 @@ a {
   display: flex;
 }
 
+@media screen and (max-width: 480px) {
+  .related .related__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .related .related__wrapper .related-item {
   margin-right: 24px;
 }
@@ -524,6 +573,13 @@ progress[value]::-webkit-progress-bar {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+@media screen and (max-width: 480px) {
+  .hot .hot-items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .hot .hot-items .item {
