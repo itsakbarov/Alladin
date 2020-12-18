@@ -22,6 +22,7 @@ a {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 999;
   right: 0;
   width: 100%;
 }
@@ -106,6 +107,13 @@ a {
   padding-top: 260px;
 }
 
+.carousel__item.second {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 21, 29, 0)), color-stop(48.31%, rgba(22, 21, 29, 0.8)), to(#16151D)), url("../../img/rider.jpg") #16151dc9;
+  background: linear-gradient(180deg, rgba(22, 21, 29, 0) 0%, rgba(22, 21, 29, 0.8) 48.31%, #16151D 100%), url("../../img/rider.jpg") #16151dc9;
+  background-size: cover;
+  background-position: center;
+}
+
 @media screen and (max-width: 480px) {
   .carousel__item {
     height: -webkit-max-content;
@@ -124,7 +132,7 @@ a {
   margin-bottom: 28px;
 }
 
-.carousel__item .movie-info .movie-info__name {
+.carousel__item .movie-info__name {
   font-style: normal;
   font-weight: bold;
   -webkit-box-align: center;
@@ -140,14 +148,14 @@ a {
 }
 
 @media screen and (max-width: 480px) {
-  .carousel__item .movie-info .movie-info__name {
+  .carousel__item .movie-info__name {
     font-weight: bold;
     font-size: 24px;
     line-height: 32px;
   }
 }
 
-.carousel__item .movie-info .movie-info__date {
+.carousel__item .movie-info__date {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -162,7 +170,7 @@ a {
   color: #FFFFFF;
 }
 
-.carousel__item .movie-info .movie-info__rating {
+.carousel__item .movie-info__rating {
   font-style: normal;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -179,11 +187,11 @@ a {
   color: #FFFFFF;
 }
 
-.carousel__item .movie-info .movie-info__rating img {
+.carousel__item .movie-info__rating img {
   margin-right: 8px;
 }
 
-.carousel__item .movie-info .movie-info__views {
+.carousel__item .movie-info__views {
   font-style: normal;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -199,21 +207,21 @@ a {
   color: #FFFFFF;
 }
 
-.carousel__item .movie-info .movie-info__views img {
+.carousel__item .movie-info__views img {
   margin-right: 8px;
 }
 
-.carousel__item .movie-button {
+.movie-button {
   margin-bottom: 185px;
 }
 
 @media screen and (max-width: 480px) {
-  .carousel__item .movie-button {
+  .movie-button {
     margin-bottom: 0;
   }
 }
 
-.carousel__item .movie-button .movie-button__link {
+.movie-button .movie-button__link {
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -226,12 +234,12 @@ a {
 }
 
 @media screen and (max-width: 480px) {
-  .carousel__item .movie-button .movie-button__link {
+  .movie-button .movie-button__link {
     display: none;
   }
 }
 
-.carousel__item .movie-button .movie-button__link:before {
+.movie-button .movie-button__link:before {
   content: '';
   width: 24px;
   height: 24px;
@@ -246,13 +254,13 @@ a {
   position: absolute;
 }
 
-.carousel__item .movie-button .movie-button__link--plus {
+.movie-button .movie-button__link--plus {
   background: rgba(60, 60, 67, 0.6);
   border-radius: 4px;
   margin-left: 32px;
 }
 
-.carousel__item .movie-button .movie-button__link--plus:before {
+.movie-button .movie-button__link--plus:before {
   content: '';
   width: 24px;
   height: 24px;
@@ -267,7 +275,7 @@ a {
   position: absolute;
 }
 
-.carousel__item .tag__link {
+.tag__link {
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -279,14 +287,14 @@ a {
 }
 
 @media screen and (max-width: 480px) {
-  .carousel__item .tag__link {
+  .tag__link {
     font-weight: 600;
     font-size: 10px;
     line-height: 10px;
   }
 }
 
-.carousel__item .tag__link--new {
+.tag__link--new {
   color: #FFFFFF;
   background: #F4415F;
 }
@@ -586,10 +594,28 @@ progress[value]::-webkit-progress-bar {
   width: 176px;
 }
 
-.hot .hot-items .item .item__img img {
+.hot .hot-items .item .item__img {
   width: 176px;
   height: 264px;
   border-radius: 4px;
+  display: block;
+  overflow: hidden;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.hot .hot-items .item .item__img img {
+  width: 176px;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  height: 264px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hot .hot-items .item:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .hot .hot-items .item .item__title {
@@ -898,4 +924,21 @@ progress[value]::-webkit-progress-bar {
 
 .footer .bottom .footer-social__link {
   margin: 0 12px;
+}
+
+.owl-carousel {
+  height: 100vh;
+  width: 100%;
+}
+
+.slick-arrow {
+  display: none !important;
+}
+
+.slick-dot {
+  display: none !important;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }

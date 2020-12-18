@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alladin Tv | Cinema</title>
+    <link rel="stylesheet" href="./assets/libs/OwlCarousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
+    <link rel="stylesheet" href="./assets/libs/slick/slick/slick.css">
     <link rel="stylesheet" href="./assets/stylesheet/min.css/main.min.css">
 
 </head>
@@ -32,7 +34,8 @@
             </div>
         </div>
     </header>
-    <section class="carousel">
+
+    <section class="fade">
         <div class="carousel__item">
             <div class="movie-info container">
                 <div class="tag">
@@ -71,9 +74,86 @@
                             </div>
                         </div>
                         <div class="controls">
-                            <a href="#" class="controls__icon controls__icon--rotated"><img
+                            <a href="#" class="controls__icon controls__icon--rotated prev"><img
                                     src="./assets/icons/arrow-ios-right.svg" alt=""></a>
-                            <a href="#" class="controls__icon"><img src="./assets/icons/arrow-ios-right.svg" alt=""></a>
+                            <a href="#" class="controls__icon next"><img src="./assets/icons/arrow-ios-right.svg"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="related container">
+                <a class="related__name" href="#">
+                    <h2>Продолжать смотреть</h2>
+                </a>
+                <div class="related__wrapper">
+                    <div class="related-item">
+                        <a href="#" class="related-item__img"><img src="./assets/img/site-hero.png" alt=""></a>
+                        <a href="#" class="related-item__link">Мстители: Финал</a>
+
+                        <progress id="file" value="82" max="100"> 32% </progress>
+                    </div>
+                    <div class="related-item">
+                        <a href="#" class="related-item__img"><img src="./assets/img/qizcha.png" alt=""></a>
+                        <a href="#" class="related-item__link">Метод</a>
+
+                        <progress id="file" value="12" max="100"> 32% </progress>
+                    </div>
+                    <div class="related-item">
+                        <a href="#" class="related-item__img"><img src="./assets/img/bratlar.png" alt=""></a>
+                        <a href="#" class="related-item__link">Гемини</a>
+
+                        <progress id="file" value="32" max="100"> 32% </progress>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel__item second">
+            <div class="movie-info container">
+                <div class="tag">
+                    <a href="#" class="tag__link tag__link--new">Новинка</a>
+                    <a href="#" class="tag__link tag__link--hd">FULL HD</a>
+                </div>
+                <div class="movie-info">
+                    <h1 class="movie-info__name">Tomb Rider 3</h1>
+                    <div class="sub-info">
+                        <span class="movie-info__date">2018 | 14 +</span>
+                        <span class="movie-info__rating"><img src="./assets/icons/imdb.svg" alt="imdb rating">9. 16</span>
+                        <span class="movie-info__views"><img src="./assets/icons/movie.svg" alt="views">6.518</span>
+
+                    </div>
+                </div>
+                <div class="movie-button">
+                    <a href="#" class="movie-button__link movie-button__link--watch">Смотреть по подписке</a>
+                    <a href="#" class="movie-button__link movie-button__link--plus">Добавить в избранное</a>
+                </div>
+            </div>
+            <div class="indicators">
+                <div class="container">
+                    <div class="left">
+                        <div class="preloader">
+                            <div class="loader">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div class="pagination">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="controls">
+                            <a href="#" class="controls__icon controls__icon--rotated prev">
+                                <img src="./assets/icons/arrow-ios-right.svg" alt="">
+                            </a>
+                            <a href="#" class="controls__icon next ">
+                                <img src="./assets/icons/arrow-ios-right.svg" alt="">
+                            </a>
+                            <!-- class="slick-prev " -->
                         </div>
                     </div>
                 </div>
@@ -373,6 +453,10 @@
             </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="./assets/libs/slick/slick/slick.min.js"></script>
+    <script src="./assets/libs/OwlCarousel/dist/owl.carousel.min.js"></script>
     <script src="./assets/script/app.js"></script>
 </body>
 
