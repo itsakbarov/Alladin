@@ -468,6 +468,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 59%;
 }
 
 @media screen and (max-width: 480px) {
@@ -481,7 +482,7 @@ a {
   margin-right: 24px;
 }
 
-.related .related__wrapper .related-item .related-item__link {
+.related .related__wrapper .related-item__link {
   display: block;
   margin-top: 16px;
   margin-bottom: 8px;
@@ -941,4 +942,12 @@ progress[value]::-webkit-progress-bar {
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+.related .owl-item {
+  width: 224px !important;
+}
+
+.related .item {
+  width: 224px;
 }

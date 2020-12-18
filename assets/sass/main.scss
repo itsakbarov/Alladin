@@ -366,6 +366,7 @@ a {
 
     .related__wrapper {
         display: flex;
+            width: 59%;
 
         @media screen and(max-width:480px) {
             flex-wrap: wrap;
@@ -373,7 +374,8 @@ a {
 
         .related-item {
             margin-right: 24px;
-
+            
+            }
             .related-item__link {
                 display: block;
                 margin-top: 16px;
@@ -388,7 +390,6 @@ a {
             }
         }
     }
-}
 
 progress[value]::-webkit-progress-bar {
     background-color: #eee;
@@ -727,13 +728,32 @@ progress[value]::-webkit-progress-bar {
     height: 100vh;
     width: 100%;
 }
+
 .slick-arrow {
+    // background: red;
+    // border: none;
+    // outline: none;
+    // cursor: pointer;
+    // position: absolute;
+    // left: 78%;
+    // top: 55.5%;
     display: none !important;
 }
-.slick-dot{
+
+.slick-dot {
     display: none !important;
 
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     display: none;
+}
+.related{
+    .owl-item{
+        width: 224px !important;
+
+    }
+    .item{
+        width: 224px;
+    }
 }
