@@ -158,4 +158,11 @@ $(document).ready(function () {
         autoplaySpeed: 2500,
         cssEase: 'linear'
     });
+    $('.best-wrapper').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+    });
 })

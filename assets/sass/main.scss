@@ -454,11 +454,13 @@ progress[value]::-webkit-progress-bar {
 
         @include f-between;
     }
-    @media screen and (max-width: 480px){
-        .controls{
+
+    @media screen and (max-width: 480px) {
+        .controls {
             display: none;
         }
     }
+
     .controls__icon--rotated {
         opacity: 0.4;
 
@@ -791,6 +793,38 @@ progress[value]::-webkit-progress-bar {
     }
 }
 
+.mobile-only {
+    background: #17131D;
+    display: none;
+    @media screen and(max-width: 480px){
+        display: block;
+    }
+    .best-title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 25px;
+        margin: 0;
+        padding: 18px 0;
+        color: #FFFFFF;
+    }
+
+    .best-heading {
+        @include f-between;
+    }
+
+    .item {
+        width: 216px;
+
+        // margin: 0 8px;
+        img {
+            width: 80%;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+
 .mobile-menu {
     position: fixed;
     bottom: 0;
@@ -803,9 +837,9 @@ progress[value]::-webkit-progress-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 16px;
 
     .mobile-link {
+        padding-top: 16px;
         color: rgba(255, 255, 255, 0.16);
         font-family: Proxima Nova;
         font-style: normal;
@@ -839,7 +873,8 @@ progress[value]::-webkit-progress-bar {
         // display: block;
     }
 }
-.else{
+
+.else {
     font-family: Proxima Nova;
     font-style: normal;
     font-weight: 600;
@@ -851,7 +886,8 @@ progress[value]::-webkit-progress-bar {
     color: #FFFFFF;
     opacity: 0.16;
     display: none;
-    @media screen and(max-width: 480px){
+
+    @media screen and(max-width: 480px) {
         display: block;
     }
 }

@@ -994,6 +994,49 @@ progress[value]::-webkit-progress-bar {
   width: 224px;
 }
 
+.mobile-only {
+  background: #17131D;
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .mobile-only {
+    display: block;
+  }
+}
+
+.mobile-only .best-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 25px;
+  margin: 0;
+  padding: 18px 0;
+  color: #FFFFFF;
+}
+
+.mobile-only .best-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mobile-only .item {
+  width: 216px;
+}
+
+.mobile-only .item img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
 .mobile-menu {
   position: fixed;
   bottom: 0;
@@ -1012,10 +1055,10 @@ progress[value]::-webkit-progress-bar {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 16px;
 }
 
 .mobile-menu .mobile-link {
+  padding-top: 16px;
   color: rgba(255, 255, 255, 0.16);
   font-family: Proxima Nova;
   font-style: normal;
