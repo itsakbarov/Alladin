@@ -5,7 +5,7 @@ $(document).ready(function () {
     //         'background-size': 'cover',
     //         'transition': 'all ease 0.8s'
     //     })
-    //     console.log('salom,')
+    //     console.log('blablabla')
     // });
 
 
