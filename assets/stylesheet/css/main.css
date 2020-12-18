@@ -427,6 +427,12 @@ a {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .related {
+    display: none;
+  }
+}
+
 .related .related__name {
   font-style: normal;
   font-weight: 600;
@@ -443,6 +449,15 @@ a {
   -webkit-transition: all ease 0.4s;
   transition: all ease 0.4s;
   width: 40%;
+}
+
+@media screen and (max-width: 480px) {
+  .related .related__name {
+    font-weight: 600;
+    width: 80%;
+    font-size: 14px;
+    line-height: 25px;
+  }
 }
 
 .related .related__name::before {
@@ -539,6 +554,13 @@ progress[value]::-webkit-progress-bar {
   position: relative;
   -webkit-transition: all ease 0.4s;
   transition: all ease 0.4s;
+}
+
+@media screen and (max-width: 480px) {
+  .hot .hot-header .hot-header__title {
+    font-size: 15px;
+    line-height: 25px;
+  }
 }
 
 .hot .hot-header .hot-header__title::before {
@@ -659,6 +681,12 @@ progress[value]::-webkit-progress-bar {
 .movie-card {
   background: #16151D;
   padding-bottom: 50px;
+}
+
+@media screen and (max-width: 480px) {
+  .movie-card {
+    display: none;
+  }
 }
 
 .movie-card .container {
@@ -839,6 +867,12 @@ progress[value]::-webkit-progress-bar {
 .footer {
   background: #13121A;
   padding: 24px 0;
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    display: none;
+  }
 }
 
 .footer .top {

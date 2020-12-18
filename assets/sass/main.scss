@@ -332,6 +332,11 @@ a {
 }
 
 .related {
+    @media screen and (max-width: 480px) {
+        display: none;
+
+    }
+
     .related__name {
         font-style: normal;
         font-weight: 600;
@@ -343,6 +348,13 @@ a {
         position: relative;
         transition: all ease 0.4s;
         width: 40%;
+
+        @media screen and (max-width: 480px) {
+            font-weight: 600;
+            width: 80%;
+            font-size: 14px;
+            line-height: 25px;
+        }
 
         &::before {
             content: '';
@@ -366,7 +378,7 @@ a {
 
     .related__wrapper {
         display: flex;
-            width: 59%;
+        width: 59%;
 
         @media screen and(max-width:480px) {
             flex-wrap: wrap;
@@ -374,22 +386,23 @@ a {
 
         .related-item {
             margin-right: 24px;
-            
-            }
-            .related-item__link {
-                display: block;
-                margin-top: 16px;
-                margin-bottom: 8px;
-                font-style: normal;
-                font-weight: 600;
-                font-size: 16px;
-                line-height: 18px;
-                display: flex;
-                align-items: center;
-                color: #FFFFFF;
-            }
+
+        }
+
+        .related-item__link {
+            display: block;
+            margin-top: 16px;
+            margin-bottom: 8px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 18px;
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;
         }
     }
+}
 
 progress[value]::-webkit-progress-bar {
     background-color: #eee;
@@ -413,6 +426,11 @@ progress[value]::-webkit-progress-bar {
             color: #FFFFFF;
             position: relative;
             transition: all ease 0.4s;
+
+            @media screen and(max-width: 480px) {
+                font-size: 15px;
+                line-height: 25px;
+            }
 
             &::before {
                 content: '';
@@ -515,6 +533,10 @@ progress[value]::-webkit-progress-bar {
 .movie-card {
     background: #16151D;
     padding-bottom: 50px;
+
+    @media screen and (max-width: 480px) {
+        display: none;
+    }
 
     .container {
         @include f-between;
@@ -658,7 +680,9 @@ progress[value]::-webkit-progress-bar {
 .footer {
     background: #13121A;
     padding: 24px 0;
-
+   @media screen and (max-width: 480px) {
+       display: none;
+   }
     .top {
         margin-bottom: 24px;
         @include f-between;
@@ -748,12 +772,14 @@ progress[value]::-webkit-progress-bar {
 ::-webkit-scrollbar {
     display: none;
 }
-.related{
-    .owl-item{
+
+.related {
+    .owl-item {
         width: 224px !important;
 
     }
-    .item{
+
+    .item {
         width: 224px;
     }
 }
