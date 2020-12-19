@@ -796,9 +796,7 @@ progress[value]::-webkit-progress-bar {
 .mobile-only {
     background: #17131D;
     display: none;
-    @media screen and(max-width: 480px){
-        display: block;
-    }
+  
     .best-title {
         font-style: normal;
         font-weight: 600;
@@ -834,10 +832,12 @@ progress[value]::-webkit-progress-bar {
     width: 100%;
     background-color: #191520;
     z-index: 9999;
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
-
+      @media screen and(max-width: 480px){
+        display: flex;
+    }
     .mobile-link {
         padding-top: 16px;
         color: rgba(255, 255, 255, 0.16);
