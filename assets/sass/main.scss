@@ -13,9 +13,11 @@ body {
     font-family: Proxima Nova Rg;
 
 }
-*{
+
+* {
     outline: none;
 }
+
 a {
     text-decoration: none;
 }
@@ -803,6 +805,7 @@ button.slick-arrow {
     background: #17131D;
 
     display: none;
+
     .best-title {
         font-style: normal;
         font-weight: 600;
@@ -812,9 +815,11 @@ button.slick-arrow {
         padding: 18px 0;
         color: #FFFFFF;
     }
-@media screen and (max-width:480px) {
-    display: block;
-}
+
+    @media screen and (max-width:480px) {
+        display: block;
+    }
+
     .best-heading {
         @include f-between;
     }
@@ -843,7 +848,7 @@ button.slick-arrow {
     display: none;
     justify-content: space-between;
     align-items: center;
-    
+
 
     @media screen and(max-width: 480px) {
         display: flex;
