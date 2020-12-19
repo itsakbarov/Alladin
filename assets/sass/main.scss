@@ -801,7 +801,6 @@ button.slick-arrow {
 
 .mobile-only {
     background: #17131D;
-    display: none;
 
     .best-title {
         font-style: normal;
@@ -841,9 +840,11 @@ button.slick-arrow {
     display: none;
     justify-content: space-between;
     align-items: center;
+    display: none;
+
 
     @media screen and(max-width: 480px) {
-        display: flex;
+        display: block;
     }
 
     .mobile-link {
