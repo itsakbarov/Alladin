@@ -802,6 +802,7 @@ button.slick-arrow {
 .mobile-only {
     background: #17131D;
 
+    display: none;
     .best-title {
         font-style: normal;
         font-weight: 600;
@@ -811,7 +812,9 @@ button.slick-arrow {
         padding: 18px 0;
         color: #FFFFFF;
     }
-
+@media screen and (max-width:480px) {
+    display: block;
+}
     .best-heading {
         @include f-between;
     }
@@ -840,11 +843,10 @@ button.slick-arrow {
     display: none;
     justify-content: space-between;
     align-items: center;
-    display: none;
-
+    
 
     @media screen and(max-width: 480px) {
-        display: block;
+        display: flex;
     }
 
     .mobile-link {

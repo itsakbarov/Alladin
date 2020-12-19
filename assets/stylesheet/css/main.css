@@ -1004,6 +1004,7 @@ button.slick-arrow {
 
 .mobile-only {
   background: #17131D;
+  display: none;
 }
 
 .mobile-only .best-title {
@@ -1014,6 +1015,12 @@ button.slick-arrow {
   margin: 0;
   padding: 18px 0;
   color: #FFFFFF;
+}
+
+@media screen and (max-width: 480px) {
+  .mobile-only {
+    display: block;
+  }
 }
 
 .mobile-only .best-heading {
@@ -1054,12 +1061,13 @@ button.slick-arrow {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: none;
 }
 
 @media screen and (max-width: 480px) {
   .mobile-menu {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
