@@ -1,12 +1,5 @@
 $(document).ready(function () {
-    // $('.next').click(function () {
-    //     $('.carousel__item').css({
-    //         'background-image': 'linear-gradient(180deg, rgba(22, 21, 29, 0) 0%, rgba(22, 21, 29, 0.8) 48.31%, #16151D 100%),url(https://images.alphacoders.com/905/thumb-1920-905006.jpg)',
-    //         'background-size': 'cover',
-    //         'transition': 'all ease 0.8s'
-    //     })
-    //     console.log('blablabla')
-    // });
+
     $('.owl-carousel').owlCarousel({
         loop: true,
         margin: 10,
@@ -22,13 +15,16 @@ $(document).ready(function () {
                 items: 3
             }
         }
-    })
+    });
+
     $('.popular').slick({
         dots: false,
         infinite: true,
         speed: 300,
         slidesToShow: 6,
         slidesToScroll: 3,
+        prevArrow: $('.best-prev'),
+        nextArrow: $('.best-next'),
         responsive: [{
                 breakpoint: 1024,
                 settings: {
@@ -64,12 +60,15 @@ $(document).ready(function () {
             // instead of a settings object
         ]
     });
+
     $('.latest').slick({
         dots: false,
         infinite: true,
         speed: 300,
         slidesToShow: 6,
-        slidesToScroll: 3,
+        prevArrow: $('.latest-prev'),
+        nextArrow: $('.latest-next'),
+        slidesToScroll: 2,
         responsive: [{
                 breakpoint: 1024,
                 settings: {
@@ -110,12 +109,14 @@ $(document).ready(function () {
         infinite: true,
         speed: 300,
         slidesToShow: 6,
-        slidesToScroll: 3,
+        prevArrow: $('.responsive-prev'),
+        nextArrow: $('.responsive-next'),
+        slidesToScroll: 2,
         responsive: [{
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 3,
-                    slidesToScroll: 3,
+                    slidesToScroll: 1,
                     infinite: true,
                     dots: true
                 }
@@ -124,14 +125,14 @@ $(document).ready(function () {
                 breakpoint: 600,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToScroll: 1
                 }
             },
             {
                 breakpoint: 480,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToScroll: 1
                 }
             },
             {
@@ -156,6 +157,8 @@ $(document).ready(function () {
         fade: true,
         autoplay: true,
         autoplaySpeed: 2500,
+        prevArrow: $('.prev'),
+        nextArrow: $('.next'),
         cssEase: 'linear'
     });
     $('.best-wrapper').slick({

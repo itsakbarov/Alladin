@@ -693,12 +693,16 @@ progress[value]::-webkit-progress-bar {
   width: 100%;
 }
 
-.slick-arrow {
+button.slick-arrow {
   display: none !important;
 }
 
 .slick-dot {
   display: none !important;
+}
+
+.fsz16 {
+  font-size: 16px;
 }
 
 ::-webkit-scrollbar {
