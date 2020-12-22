@@ -78,7 +78,13 @@ a {
         }
     }
 }
-
+.slick-arrow:hover
+{
+    display: inline-block;
+    transition: all ease 0.4s;
+    background: rgba(58, 57, 57, 0.35);
+    border-radius: 4px;
+}
 
 .carousel__item {
     background: linear-gradient(180deg, rgba(22, 21, 29, 0) 0%, rgba(22, 21, 29, 0.8) 48.31%, #16151D 100%),
