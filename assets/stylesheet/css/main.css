@@ -83,6 +83,14 @@ a {
   font-size: 14px;
   line-height: 17px;
   color: #FFFFFF;
+  padding: 2px 6px;
+  -webkit-transition: all ease 0.4s;
+  transition: all ease 0.4s;
+  border-radius: 5px;
+}
+
+.header .header__inner .nav-wrapper__link:hover {
+  background: rgba(0, 0, 0, 0.35);
 }
 
 .header .header__inner .user-kits {
