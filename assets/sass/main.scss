@@ -179,6 +179,7 @@ a {
         background: #5931AC;
         border-radius: 4px;
         position: relative;
+        transition: all ease 0.4s;
 
         @media screen and (max-width: 480px) {
             display: none;
@@ -199,11 +200,28 @@ a {
             position: absolute;
         }
 
+        &--watch:hover {
+            background: white;
+            color: #5931AC;
+            &:before{
+            background-image: url(../../icons/play-pink.svg);
+                
+            }
+        }
+
         &--plus {
             background: rgba(60, 60, 67, 0.6);
             border-radius: 4px;
             margin-left: 32px;
+            transition: all ease 0.4s;
+            &:hover{
+            color: rgba(60, 60, 67, 0.9);
+            background: #fff;
+                &::before{
+                background-image: url(../../icons/plus-black.svg);
 
+                }
+            }
             &:before {
                 content: '';
                 width: 24px;
@@ -283,10 +301,15 @@ a {
             display: block;
             width: 8px;
             height: 8px;
+            cursor: pointer;
             background: #FFFFFF;
             opacity: 0.34;
+            transition: all ease 0.4s;
             border-radius: 4px;
             margin-right: 16px;
+            &:hover{
+                opacity: 1;
+            }
         }
     }
 }
@@ -391,7 +414,7 @@ a {
 
         .related-item {
             margin-right: 24px;
-                transition: all ease 0.4s;
+            transition: all ease 0.4s;
 
             &__img {
                 transition: all ease 0.4s;
@@ -596,9 +619,21 @@ progress[value]::-webkit-progress-bar {
                     margin-right: 16px;
                     color: #FFFFFF;
 
+                    &:hover {
+                        color: #2C2C2E;
+                        transition: all ease 0.4s;
+                        background: white;
+                    }
+
                     &--hd {
                         color: #2C2C2E;
+                        transition: all ease 0.4s;
                         background: white;
+
+                        &:hover {
+                            background: #2c2c2e;
+                            color: #fff;
+                        }
                     }
                 }
             }
@@ -664,6 +699,17 @@ progress[value]::-webkit-progress-bar {
                     color: #FFFFFF;
                     background: #2F2D38;
                     border-radius: 4px;
+                    transition: all ease 0.4s;
+
+                    &:hover {
+                        background: #fff;
+                        color: #2F2D38;
+
+                        &:before {
+                            background-image: url(../../icons/plus-black.svg);
+
+                        }
+                    }
 
                     &:before {
                         content: '';
@@ -683,6 +729,16 @@ progress[value]::-webkit-progress-bar {
                     &--pink {
                         background: #5931AC;
                         border-radius: 4px;
+                        transition: all ease 0.4s;
+
+                        &:hover {
+                            background: #fff;
+                            color: #5931AC;
+
+                            &::before {
+                                background-image: url(../../icons/play-pink.svg);
+                            }
+                        }
 
                         &::before {
                             background-image: url(../../icons/play.svg);

@@ -235,6 +235,8 @@ a {
   background: #5931AC;
   border-radius: 4px;
   position: relative;
+  -webkit-transition: all ease 0.4s;
+  transition: all ease 0.4s;
 }
 
 @media screen and (max-width: 480px) {
@@ -258,10 +260,30 @@ a {
   position: absolute;
 }
 
+.movie-button .movie-button__link--watch:hover {
+  background: white;
+  color: #5931AC;
+}
+
+.movie-button .movie-button__link--watch:hover:before {
+  background-image: url(../../icons/play-pink.svg);
+}
+
 .movie-button .movie-button__link--plus {
   background: rgba(60, 60, 67, 0.6);
   border-radius: 4px;
   margin-left: 32px;
+  -webkit-transition: all ease 0.4s;
+  transition: all ease 0.4s;
+}
+
+.movie-button .movie-button__link--plus:hover {
+  color: rgba(60, 60, 67, 0.9);
+  background: #fff;
+}
+
+.movie-button .movie-button__link--plus:hover::before {
+  background-image: url(../../icons/plus-black.svg);
 }
 
 .movie-button .movie-button__link--plus:before {
@@ -362,10 +384,17 @@ a {
   display: block;
   width: 8px;
   height: 8px;
+  cursor: pointer;
   background: #FFFFFF;
   opacity: 0.34;
+  -webkit-transition: all ease 0.4s;
+  transition: all ease 0.4s;
   border-radius: 4px;
   margin-right: 16px;
+}
+
+.indicators .pagination span:hover {
+  opacity: 1;
 }
 
 .loader {
@@ -768,9 +797,23 @@ progress[value]::-webkit-progress-bar {
   color: #FFFFFF;
 }
 
+.movie-card .container .movie-card__right .top-btns .movie-card__link:hover {
+  color: #2C2C2E;
+  -webkit-transition: all ease 0.4s;
+  transition: all ease 0.4s;
+  background: white;
+}
+
 .movie-card .container .movie-card__right .top-btns .movie-card__link--hd {
   color: #2C2C2E;
+  -webkit-transition: all ease 0.4s;
+  transition: all ease 0.4s;
   background: white;
+}
+
+.movie-card .container .movie-card__right .top-btns .movie-card__link--hd:hover {
+  background: #2c2c2e;
+  color: #fff;
 }
 
 .movie-card .container .movie-card__right .movie-rating {
@@ -864,6 +907,17 @@ progress[value]::-webkit-progress-bar {
   color: #FFFFFF;
   background: #2F2D38;
   border-radius: 4px;
+  -webkit-transition: all ease 0.4s;
+  transition: all ease 0.4s;
+}
+
+.movie-card .container .movie-card__right .bottom-btns .bottom-btns__btn:hover {
+  background: #fff;
+  color: #2F2D38;
+}
+
+.movie-card .container .movie-card__right .bottom-btns .bottom-btns__btn:hover:before {
+  background-image: url(../../icons/plus-black.svg);
 }
 
 .movie-card .container .movie-card__right .bottom-btns .bottom-btns__btn:before {
@@ -884,6 +938,17 @@ progress[value]::-webkit-progress-bar {
 .movie-card .container .movie-card__right .bottom-btns .bottom-btns__btn--pink {
   background: #5931AC;
   border-radius: 4px;
+  -webkit-transition: all ease 0.4s;
+  transition: all ease 0.4s;
+}
+
+.movie-card .container .movie-card__right .bottom-btns .bottom-btns__btn--pink:hover {
+  background: #fff;
+  color: #5931AC;
+}
+
+.movie-card .container .movie-card__right .bottom-btns .bottom-btns__btn--pink:hover::before {
+  background-image: url(../../icons/play-pink.svg);
 }
 
 .movie-card .container .movie-card__right .bottom-btns .bottom-btns__btn--pink::before {
