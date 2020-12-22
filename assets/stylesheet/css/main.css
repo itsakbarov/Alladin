@@ -501,6 +501,25 @@ a {
 
 .related .related__wrapper .related-item {
   margin-right: 24px;
+  -webkit-transition: all ease 0.4s;
+  transition: all ease 0.4s;
+}
+
+.related .related__wrapper .related-item__img {
+  -webkit-transition: all ease 0.4s;
+  transition: all ease 0.4s;
+  width: 224px;
+  height: 136px;
+  overflow: hidden;
+  display: block;
+}
+
+.related .related__wrapper .related-item__img:hover img {
+  -webkit-transition: all ease 0.4s;
+  transition: all ease 0.4s;
+  overflow: hidden;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .related .related__wrapper .related-item__link {
@@ -1072,7 +1091,7 @@ button.slick-arrow {
 }
 
 .mobile-menu .mobile-link {
-  padding-top: 16px;
+  margin-top: 25px;
   color: rgba(255, 255, 255, 0.16);
   font-family: Proxima Nova;
   font-style: normal;

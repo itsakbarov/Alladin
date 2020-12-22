@@ -391,7 +391,21 @@ a {
 
         .related-item {
             margin-right: 24px;
+                transition: all ease 0.4s;
 
+            &__img {
+                transition: all ease 0.4s;
+                width: 224px;
+                height: 136px;
+                overflow: hidden;
+                display: block;
+
+                &:hover img {
+                    transition: all ease 0.4s;
+                    overflow: hidden;
+                    transform: scale(1.1)
+                }
+            }
         }
 
         .related-item__link {
@@ -406,6 +420,7 @@ a {
             align-items: center;
             color: #FFFFFF;
         }
+
     }
 }
 
@@ -855,7 +870,7 @@ button.slick-arrow {
     }
 
     .mobile-link {
-        padding-top: 16px;
+        margin-top: 25px;
         color: rgba(255, 255, 255, 0.16);
         font-family: Proxima Nova;
         font-style: normal;

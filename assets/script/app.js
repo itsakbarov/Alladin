@@ -55,9 +55,6 @@ $(document).ready(function () {
                     slidesToScroll: 1
                 }
             }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
         ]
     });
 
@@ -99,9 +96,6 @@ $(document).ready(function () {
                     slidesToScroll: 1
                 }
             }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
         ]
     });
     $('.responsive').slick({
@@ -142,9 +136,6 @@ $(document).ready(function () {
                     slidesToScroll: 1
                 }
             }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
         ]
     });
 
@@ -161,6 +152,7 @@ $(document).ready(function () {
         nextArrow: $('.next'),
         cssEase: 'linear'
     });
+    
     $('.best-wrapper').slick({
         dots: false,
         infinite: true,
