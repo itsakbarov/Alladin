@@ -8,14 +8,50 @@
     <meta name="author" content="Akbarov-team">
     <meta name="description" content="Media, movie,o'zbek kino, kino portal">
     <link rel="stylesheet" href="./assets/libs/OwlCarousel/dist/assets/owl.carousel.min.css">
-    <link rel="icon"  href="./assets/icons/cinemagic-removebg-preview.png">
+    <link rel="icon" href="./assets/icons/cinemagic-removebg-preview.png">
     <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
     <link rel="stylesheet" href="./assets/libs/slick/slick/slick.css">
-    <link rel="stylesheet" href="./assets/stylesheet/min.css/main.min.css">
+    <link rel="stylesheet" href="./assets/style/main.min.css">
 
 </head>
 
 <body>
+    <div class="overlay"></div>
+    <div class="movie-wrapper">
+        <video class="video-source">
+            <source src="./assets/video/Shawn Mendes, Justin Bieber - Monster.mp4">
+        </video>
+        <img src="./assets/icons/play-button-arrowhead.svg" alt="" class="video-status-img">
+        <div class="video-controls">
+            <button class="play-pause">
+                <img src="./assets/icons/play.svg" class="pp-stat" width="15px" alt="">
+            </button>
+            <button class="next-btn">
+                <img src="./assets/icons/fast-forward-media-control-button.svg" width="15px" alt=""
+                    class="next-btn-img">
+            </button>
+            <div class="volume-control">
+                <img src="./assets/icons/vol3.svg" alt="" class="volume-icon">
+                <input type="range" class="volume-range range" min="0" max="100">
+            </div>
+            <div class="video-length">
+                <span class="current-time">--:--</span>
+                <input type="range" class="range video-length-range" min="0" max="100">
+                <span class="video-length-time">--:--</span>
+                <img src="./assets/icons/expand.svg" style="margin-left: 20px;display: block;" width="15px" alt=""
+                    class="fullscreen">
+            </div>
+            <button class="more-info">
+                <div class="more-info-content">
+                    <a href="#" class="more-info-link">Download</a>
+                    <a href="#" class="more-info-link">Share</a>
+                    <a href="#" class="more-info-link">Adults section</a>
+                    <a href="#" class="more-info-link">Share</a>
+                </div>
+                <img src="./assets/icons/more.svg" width="15px" alt="" class="more-info">
+            </button>
+        </div>
+    </div>
     <header class="header">
         <div class="header__inner container">
             <a href="index.html" class="logo-holder">Cinemagic</a>
