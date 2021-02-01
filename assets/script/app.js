@@ -239,11 +239,11 @@ function volumeIconChanger(volumeStatus) {
             break;
 
         case volumeStatus < 5 || volumeStatus == 0:
-            volumeIcon.setAttribute('src', './assets/ icons/vol0.svg')
+            volumeIcon.setAttribute('src', './assets/icons/vol0.svg')
             break;
 
         default:
-            volumeIcon.setAttribute('src', './icons/vol0.svg')
+            volumeIcon.setAttribute('src', './assets/icons/vol0.svg')
             break;
     }
 }
@@ -256,7 +256,6 @@ volumeRange.addEventListener('change', () => {
 function updateProgress() {
     videoLengthRange.value = Math.floor((video.currentTime * 100) / video.duration);
     currentVideoTime();
-    formattorTime(video.duration)
 
 }
 
@@ -279,17 +278,15 @@ volumeIcon.addEventListener('click', () => {
 })
 let currentTime = document.querySelector('.current-time')
 
-function formattorTime(fullDuration) {
-    let secondToMinutes = fullDuration / 60;
-    let minutes = Math.round(secondToMinutes);
-    let seconds = Math.ceil(secondToMinutes - minutes);
-    currentTime.innerHTML = `${Math.floor(seconds)} : ${Math.ceil(video.currentTime)}`
-}
 
-function currentVideoTime() {
-    currentTime.innerHTML = Math.round(video.currentTime);
-    videoLengthRange.setAttribute('max', Math.round(video.duration))
-}
+// function currentVideoTime() {
+//     let timeMinute = Math.floor(video.currentTime / 60);
+//     let timeSecond = Math.round(video.currentTime - timeMinute);
+//     currentTime.innerHTML = `${timeMinute} : ${timeSecond}`;
+//     if (timeSecond > 60 ) {
+//         timeSecond = 0
+//     }
+// }    
 nextBtn.addEventListener('click', () => {
     video.currentTime = video.currentTime + 15
 })
@@ -310,6 +307,34 @@ setInterval(() => {
     duration.innerText = `${time.minutes}:${time.seconds}`;
     duration.setAttribute('datetime', `${time.minutes}m ${time.seconds}s`);
 }, 1000);
+
+setInterval(() => {
+    var hour = Math.floor(video.currentTime / (60 * 60))
+    var mins = Math.floor(video.currentTime / 60);
+    var secs = Math.floor(video.currentTime % 60);
+
+    if (hour < 10) {
+        hour = '0' + String(hour);
+    }
+    if (mins > 10) {
+        mins = String(mins);
+    }
+    if (mins > 59) {
+        mins = mins - 60
+    }
+
+
+    if (mins < 10) {
+        mins = '0' + String(mins);
+    }
+
+
+    if (secs < 10) {
+        secs = '0' + String(secs);
+    }
+    currentTime.innerHTML = `${hour}:${mins}:${secs}`
+
+},1000);
 
 video.addEventListener('dblclick', () => {
     if (video.requestFullscreen) {
@@ -335,17 +360,17 @@ window.addEventListener('keypress', (e) => {
                 $('.video-status-img').attr('src', './assets/icons/play-button-arrowhead.svg')
             }
             break;
-        case 'm':
+        case 'm': 
             video.volume = 0;
             volumeRange.value = 0;
             volumeIconChanger(video.volume * 100)
             break;
         case 'd':
-            video.currentTime = +15
+            video.currentTime = video.currentTime +15
             // video.volume = video.volume + 0.10 
             break;
         case 'a':
-            video.currentTime = -15
+            video.currentTime = video.currentTime - 15
             break;
         case 'w':
             video.volume = video.volume + 0.10
@@ -353,7 +378,7 @@ window.addEventListener('keypress', (e) => {
             volumeIconChanger(video.volume * 100)
             break;
         case 's':
-            video.volume = video.volume - 0.10
+            video.volume = video.volume * 100 - 0.01
             volumeRange.value = video.volume;
             volumeIconChanger(video.volume * 100)
             break;
@@ -362,7 +387,9 @@ window.addEventListener('keypress', (e) => {
 
     }
 })
+document.querySelector('.video-status-img'), addEventListener('click', () => {
 
+})
 let videoStatusImg = document.querySelector('.video-status-img');
 
 videoStatusImg.addEventListener('click', () => {

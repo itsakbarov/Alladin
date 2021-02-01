@@ -417,6 +417,11 @@ a {
   opacity: 1;
 }
 
+.current-time {
+  width: 80px;
+  text-align: center;
+}
+
 .loader {
   display: inline-block;
   position: relative;
@@ -1379,7 +1384,8 @@ button.slick-arrow {
   position: absolute;
   width: 300%;
   top: -101px;
-  translate: translate(117%, 149%) rotate(60deg);
+  -webkit-transform: translate(117%, 149%) rotate(60deg);
+          transform: translate(117%, 149%) rotate(60deg);
   opacity: 0;
   right: 0px;
   padding: 10px 15px;
@@ -1401,4 +1407,36 @@ button.slick-arrow {
   margin-bottom: 3px;
   z-index: 888;
   display: block;
+}
+
+.music-player {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  background: black;
+  border-radius: 30px;
+  z-index: 9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.music-player .music-icon-holder {
+  width: 60px;
+  height: 60px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 50%;
+}
+
+.music-player .artist-name {
+  margin: 0;
+}
+
+.music-player .music-title {
+  margin: 0;
+}
+
+.music-player .artist-info {
+  width: 200px;
 }
