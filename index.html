@@ -11,13 +11,29 @@
     <link rel="icon" href="./assets/icons/cinemagic-removebg-preview.png">
     <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
     <link rel="stylesheet" href="./assets/libs/slick/slick/slick.css">
-    <link rel="stylesheet" href="./assets/style/main.min.css">
+    <link rel="stylesheet" href="./assets/stylesheet/min.css/main.min.css">
 
 </head>
 
 <body>
+    <form class="search-bar">
+        <div class="search-block">
+                    <input type="text" class="search-input" placeholder="Type to Search">
+        <button class="search-bar-close">&times;</button>
+        </div>
+        <div class="searched-movies">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nemo harum error magnam, veritatis deleniti commodi optio minima incidunt id tempore dolorem esse sequi sit, voluptatem, nam eligendi rem quaerat.
+        </div>
+    </form>
     <div class="overlay"></div>
     <div class="movie-wrapper">
+        <div class="video-info">
+            <h3>Justin Bieber and Shawn Mendes - Monster</h3>
+            <div class="video-block-constrols">
+                <span class="minimize control-btn"></span>
+                <span class="exit control-btn"></span>
+            </div>
+        </div>
         <video class="video-source">
             <source src="./assets/video/Shawn Mendes, Justin Bieber - Monster.mp4">
         </video>
@@ -36,7 +52,7 @@
             </div>
             <div class="video-length">
                 <span class="current-time">--:--</span>
-                <input type="range" class="range video-length-range" min="0" max="100">
+                <input type="range" class="range video-length-range" value="0" min="0" max="100">
                 <span class="video-length-time">--:--</span>
                 <img src="./assets/icons/expand.svg" style="margin-left: 20px;display: block;" width="15px" alt=""
                     class="fullscreen">
@@ -53,18 +69,6 @@
         </div>
 
     </div>
-  <div class="music-player">
-    <div class="artist-info">
-        <audio>
-            <source src="./assets/">
-        </audio>
-        <h4 class="artist-name">Shawn Mendes</h4>
-        <p class="music-title">Monster</p>
-    </div>
-    <button class="music-icon-holder">
-                <img src="./assets/icons/music.svg" width="50" alt="">
-            </button>
-  </div>
     <header class="header">
         <div class="header__inner container">
             <a href="index.html" class="logo-holder">Cinemagic</a>
@@ -624,6 +628,7 @@
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="./assets/libs/slick/slick/slick.min.js"></script>
     <script src="./assets/libs/OwlCarousel/dist/owl.carousel.min.js"></script>
+    <script src="./assets/script/getdata.js"></script>
     <script src="./assets/script/app.js"></script>
 </body>
 
