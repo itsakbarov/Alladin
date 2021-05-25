@@ -389,7 +389,6 @@ window.addEventListener('keypress', (e) => {
             break;
         default:
             break;
-
     }
 })
 document.querySelector('.video-status-img'), addEventListener('click', () => {
